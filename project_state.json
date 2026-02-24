@@ -1,0 +1,207 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Full-stack multi-page e-commerce website for 'Krushna Electronics' retail electronics store. Testing/learning purposes only. Node.js + Express backend, SQLite3 database, HTML/CSS/JS frontend. Dark blue, white, and neon accent theme. Includes 7 frontend pages, session/JWT auth, role-based access, and a fully protected admin panel.",
+  "architectural_notes": [
+    "Stack: Node.js + Express backend, SQLite3 database, HTML/CSS/JS frontend",
+    "Auth: JWT or session-based, role-based (User/Admin); admin routes protected at backend level",
+    "Admin panel accessible only when logged-in user role = 'admin'",
+    "Product images stored locally on the server",
+    "Cart system can be session-based",
+    "Project is local/localhost only — not production-ready or hosting-optimized",
+    "UI: Dark blue + white + neon accents, rounded cards, soft shadows, smooth transitions, responsive (mobile/tablet/desktop)"
+  ],
+  "known_issues": [
+    "Home page background image contains text that interferes/overlaps with actual page text"
+  ],
+  "isFixRequest": true,
+  "imageRequirements": "## Required Images\n- Clean dark navy electronics-themed hero banner background with abstract circuit board or glowing tech bokeh elements, no text or typography (hero-bg.dim_1920x700.png)",
+  "existing_features": [
+    {
+      "id": "feature-apply-a-consistent-dark-blue-white-and-neon-accent-electronics-showroom-visual-theme-across-the-entire-frontend-dark-navy-deep-blue-backgrounds-crisp-white-text-cyan-electric-teal-neon-highlights-sans-serif-typography-rounded-product-cards-with-soft-drop-shadows-smooth-hover-transition-animations-and-a-fully-responsive-layout-mobile-tablet-desktop",
+      "title": "Apply a consistent dark-blue, white, and neon-accent electronics-showroom visual theme across the entire frontend: dark navy/deep-blue backgrounds, crisp white text, cyan/electric-teal neon highlights, sans-serif typography, rounded product cards with soft drop-shadows, smooth hover/transition animations, and a fully responsive layout (mobile, tablet, desktop).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-sticky-navigation-bar-visible-on-every-page-that-includes-the-krushna-electronics-logo-brand-name-navigation-links-home-shop-about-contact-a-search-bar-cart-icon-with-item-count-badge-wishlist-icon-and-login-register-or-user-account-button",
+      "title": "Implement a sticky navigation bar visible on every page that includes the Krushna Electronics logo/brand name, navigation links (Home, Shop, About, Contact), a search bar, cart icon with item count badge, wishlist icon, and Login/Register or user-account button.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-home-page-containing-1-a-full-width-hero-banner-showcasing-latest-offers-with-a-cta-button-2-a-featured-products-section-displaying-4-8-product-cards-3-a-categories-section-with-clickable-category-tiles-4-a-why-choose-us-section-with-icon-based-feature-highlights-5-a-customer-reviews-testimonials-section-and-6-a-footer-with-store-contact-info-social-media-links-and-quick-navigation-links",
+      "title": "Build a Home page containing: (1) a full-width hero banner showcasing latest offers with a CTA button, (2) a Featured Products section displaying 4–8 product cards, (3) a Categories section with clickable category tiles, (4) a 'Why Choose Us' section with icon-based feature highlights, (5) a Customer Reviews/Testimonials section, and (6) a footer with store contact info, social media links, and quick navigation links.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-shop-page-with-a-product-grid-layout-that-supports-filtering-by-category-and-price-range-sorting-by-price-low-high-high-low-newest-and-popularity-add-to-cart-button-on-each-card-and-star-rating-display-on-each-card",
+      "title": "Build a Shop page with a product grid layout that supports: filtering by category and price range, sorting by price (low–high, high–low), newest, and popularity, 'Add to Cart' button on each card, and star-rating display on each card.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-product-details-page-that-displays-a-product-image-gallery-main-image-thumbnails-product-title-price-and-star-rating-a-specifications-section-stock-availability-status-add-to-cart-and-buy-now-buttons-and-a-related-products-section",
+      "title": "Build a Product Details page that displays: a product image gallery (main image + thumbnails), product title, price, and star rating, a Specifications section, stock availability status, 'Add to Cart' and 'Buy Now' buttons, and a Related Products section.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-cart-page-listing-selected-products-with-product-image-name-price-per-item-a-quantity-selector-increment-decrement-manual-input-a-remove-button-per-item-a-price-breakdown-showing-subtotal-tax-e-g-18-gst-and-total-and-a-proceed-to-checkout-button",
+      "title": "Build a Cart page listing selected products with: product image/name/price per item, a quantity selector (increment/decrement/manual input), a 'Remove' button per item, a price breakdown showing Subtotal, Tax (e.g., 18% GST), and Total, and a 'Proceed to Checkout' button.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-checkout-page-with-a-billing-details-form-name-email-phone-a-shipping-address-form-simulated-payment-method-selection-upi-credit-debit-card-cash-on-delivery-and-an-order-confirmation-screen-shown-after-successful-order-placement",
+      "title": "Build a Checkout page with: a billing details form (name, email, phone), a shipping address form, simulated payment method selection (UPI, Credit/Debit Card, Cash on Delivery), and an Order Confirmation screen shown after successful order placement.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-about-us-page-with-a-store-introduction-paragraph-mission-and-vision-statements-and-a-years-of-service-or-milestones-highlight-section",
+      "title": "Build an About Us page with: a store introduction paragraph, Mission and Vision statements, and a 'Years of Service' or milestones highlight section.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-contact-page-with-a-contact-form-name-email-subject-message-that-submits-to-the-backend-an-india-based-store-address-a-phone-number-a-map-placeholder-section-and-listed-business-hours",
+      "title": "Build a Contact page with: a contact form (name, email, subject, message) that submits to the backend, an India-based store address, a phone number, a map placeholder section, and listed business hours.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-login-and-register-pages-modals-with-jwt-based-authentication-register-collects-name-email-and-password-login-returns-a-jwt-token-stored-in-localstorage-the-default-user-role-is-user-a-pre-seeded-admin-account-has-role-admin-display-user-account-info-and-a-logout-option-when-authenticated",
+      "title": "Implement Login and Register pages/modals with JWT-based authentication. Register collects name, email, and password; Login returns a JWT token stored in localStorage. The default user role is 'user'; a pre-seeded admin account has role 'admin'. Display user account info and a logout option when authenticated.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-wishlist-feature-for-authenticated-users-an-add-to-wishlist-button-on-product-cards-and-the-product-details-page-a-dedicated-wishlist-page-listing-saved-products-and-the-ability-to-remove-items-from-the-wishlist-wishlist-data-must-be-persisted-in-the-backend-database-per-user",
+      "title": "Implement a Wishlist feature for authenticated users: an 'Add to Wishlist' button on product cards and the Product Details page, a dedicated Wishlist page listing saved products, and the ability to remove items from the wishlist. Wishlist data must be persisted in the backend database per user.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-admin-panel-accessible-only-to-users-with-role-admin-it-must-include-a-dashboard-overview-showing-total-users-total-products-total-orders-and-total-sales-a-product-management-section-add-edit-delete-products-update-stock-and-associate-a-product-image-filename-a-user-management-section-listing-all-registered-users-and-an-order-management-section-listing-all-orders-with-the-ability-to-update-order-status",
+      "title": "Build an Admin Panel accessible only to users with role 'admin'. It must include: a Dashboard overview showing total users, total products, total orders, and total sales; a Product Management section (add, edit, delete products, update stock, and associate a product image filename); a User Management section listing all registered users; and an Order Management section listing all orders with the ability to update order status.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-on-the-home-page-hero-banner-replace-or-modify-the-background-image-so-it-no-longer-contains-visible-embedded-text-either-generate-a-clean-background-image-without-any-text-or-apply-a-strong-dark-overlay-e-g-semi-transparent-dark-navy-layer-at-60-75-opacity-over-the-existing-hero-background-so-that-any-embedded-text-in-the-image-is-fully-obscured-and-does-not-interfere-with-the-hero-banner-s-headline-subheadline-or-cta-button-text",
+      "title": "On the Home page hero banner, replace or modify the background image so it no longer contains visible embedded text. Either generate a clean background image without any text, or apply a strong dark overlay (e.g., semi-transparent dark navy layer at 60–75% opacity) over the existing hero background so that any embedded text in the image is fully obscured and does not interfere with the hero banner's headline, subheadline, or CTA button text.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Home page with hero banner, featured products, categories, why choose us, reviews, and footer",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Shop page with product grid, category/price filters, sort options, add-to-cart, and rating display",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Product Details page with image gallery, specs, stock info, add-to-cart/buy-now, and related products",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Cart page with quantity selector, remove option, price breakdown, and checkout button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Checkout page with billing form, shipping address, simulated payment options (UPI/Card/COD), and order confirmation",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "About Us page with store intro, mission/vision, and years of service",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Contact page with form, India-based address, phone, map placeholder, and business hours",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Login/Register functionality with role-based authentication (User/Admin) using JWT or session",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Wishlist feature for logged-in users",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Admin panel (protected by role) with product CRUD, stock update, image upload, user/order management, and basic analytics",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-22",
+      "summary": "Design and implement the Motoko backend as a single actor exposing REST-style query and update calls for: user registration and login (with hashed passwords and JWT issuance), product CRUD, category management, cart management, wishlist management, order creation and status tracking, and a contact form submission endpoint.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-24",
+      "summary": "Seed the backend database with sample data on first run: at least 2 product categories (e.g., Smartphones, Laptops), at least 6 sample products with realistic electronics details, one admin user account (admin@krushna.com / Admin@123), and at least 2 regular user accounts.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Krushna Electronics",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

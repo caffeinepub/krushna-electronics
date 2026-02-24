@@ -1,0 +1,42 @@
+{
+  "kind": "build_request",
+  "title": "Fix hero banner background image text interference on Home page",
+  "projectName": "Krushna Electronics",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "text": "On the Home page hero banner, replace or modify the background image so it no longer contains visible embedded text. Either generate a clean background image without any text, or apply a strong dark overlay (e.g., semi-transparent dark navy layer at 60–75% opacity) over the existing hero background so that any embedded text in the image is fully obscured and does not interfere with the hero banner's headline, subheadline, or CTA button text.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "on the home page the background image contains text that is interfiering, with actuall text"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The hero banner background image contains no visible text that overlaps or competes with the hero section's headline, subheadline, or CTA button.",
+        "The hero banner's actual text (headline, subheadline, CTA) is clearly legible against the background.",
+        "If an overlay approach is used, the overlay is dark enough (at minimum semi-transparent dark navy) to fully suppress any image-embedded text.",
+        "The hero section remains visually appealing and consistent with the dark navy/neon electronics theme."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not alter any file listed under frontend.immutablePaths.",
+    "Maintain the existing dark navy/neon electronics visual theme."
+  ],
+  "nonGoals": [
+    "Changing the layout or content of any other Home page section.",
+    "Modifying the hero banner's text content, CTA links, or animations.",
+    "Altering any page other than the Home page."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Clean dark navy electronics-themed hero banner background with abstract circuit board or glowing tech bokeh elements, no text or typography (hero-bg.dim_1920x700.png)"
+    ],
+    "edits": []
+  }
+}

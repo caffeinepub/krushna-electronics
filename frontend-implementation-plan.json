@@ -1,0 +1,24 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Fix hero banner background image text interference on Home page",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "summary": "Replace or modify the Home page hero banner background image to eliminate visible embedded text that interferes with the hero section's headline, subheadline, and CTA button. Use the generated clean background image (hero-bg.dim_1920x700.png) or apply a strong dark overlay (60–75% opacity dark navy) to fully obscure any existing image text.",
+      "acceptanceCriteria": [
+        "The hero banner background image contains no visible text that overlaps or competes with the hero section's headline, subheadline, or CTA button.",
+        "The hero banner's actual text (headline, subheadline, CTA) is clearly legible against the background.",
+        "If an overlay approach is used, the overlay is dark enough (at minimum semi-transparent dark navy) to fully suppress any image-embedded text.",
+        "The hero section remains visually appealing and consistent with the dark navy/neon electronics theme."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Update the hero banner section to use the generated clean background image at frontend/public/assets/generated/hero-bg.dim_1920x700.png. Replace the existing background image reference with the new asset path. Alternatively, if keeping the current image, add a dark overlay layer (semi-transparent dark navy at 60–75% opacity using Tailwind's bg-opacity utilities or inline styles) positioned over the background to fully obscure any embedded text in the image. Ensure the hero text (headline, subheadline, CTA button) remains clearly legible and properly styled with adequate contrast against the new background treatment."
+        }
+      ]
+    }
+  ]
+}

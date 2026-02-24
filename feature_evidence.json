@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-on-the-home-page-hero-banner-replace-or-modify-the-background-image-so-it-no-longer-contains-visible-embedded-text-either-generate-a-clean-background-image-without-any-text-or-apply-a-strong-dark-overlay-e-g-semi-transparent-dark-navy-layer-at-60-75-opacity-over-the-existing-hero-background-so-that-any-embedded-text-in-the-image-is-fully-obscured-and-does-not-interfere-with-the-hero-banner-s-headline-subheadline-or-cta-button-text",
+      "featureTitle": "On the Home page hero banner, replace or modify the background image so it no longer contains visible embedded text. Either generate a clean background image without any text, or apply a strong dark overlay (e.g., semi-transparent dark navy layer at 60–75% opacity) over the existing hero background so that any embedded text in the image is fully obscured and does not interfere with the hero banner's headline, subheadline, or CTA button text.",
+      "files": [
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

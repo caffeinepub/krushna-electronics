@@ -1,0 +1,14 @@
+{
+  "frontend/src/pages/Cart.tsx": "Cart page displaying all cart items with quantity controls, remove buttons, and a live order summary showing subtotal, GST, and total. Replaced the forbidden `require()` call with a proper ES module import of `useGetProducts` at the top of the file, and removed the unused helper hook and dead code.",
+  "frontend/src/pages/Checkout.tsx": "Checkout page with billing/shipping forms, simulated payment method selection (UPI/Card/COD), order summary with GST calculation, and a post-order confirmation screen showing order ID and estimated delivery.",
+  "frontend/src/pages/About.tsx": "About Us page with store introduction, mission/vision sections, key statistics, and a visual timeline of company milestones from 2010 to present.",
+  "frontend/src/pages/Contact.tsx": "Contact page with a validated contact form that submits to the backend, store address/phone/email info, business hours, and a styled map placeholder.",
+  "frontend/src/pages/Login.tsx": "Login page using Internet Identity authentication with feature highlights, redirects to home on successful login, and handles new user registration via the ProfileSetupModal.",
+  "frontend/src/pages/Wishlist.tsx": "Wishlist page showing all saved products for authenticated users, with empty state handling and redirect to login for unauthenticated users.",
+  "frontend/src/pages/admin/Dashboard.tsx": "Admin dashboard showing live stats (total users, products, orders, sales) with access control that blocks non-admin users and provides quick navigation links.",
+  "frontend/src/pages/admin/ProductManagement.tsx": "Admin product management page with a full CRUD table, add/edit dialog form, delete confirmation, and inline stock editing.",
+  "frontend/src/pages/admin/UserManagement.tsx": "Admin user management page displaying all registered users in a table with role assignment dropdowns (user/admin).",
+  "frontend/src/pages/admin/OrderManagement.tsx": "Admin order management page listing all orders with status update dropdowns (Pending/Processing/Shipped/Delivered/Cancelled).",
+  "frontend/src/components/admin/AdminLayout.tsx": "Admin layout wrapper with a sidebar navigation, admin access control guard (redirects non-admins), and consistent styling for all admin pages.",
+  "frontend/src/pages/Home.tsx": "Home page with hero banner, category grid, featured products, features section, testimonials, and CTA. The hero banner now uses the clean `hero-bg.dim_1920x700.png` background image with a strong 75% dark navy overlay plus a gradient overlay to fully suppress any image-embedded text while keeping the hero content clearly legible."
+}
